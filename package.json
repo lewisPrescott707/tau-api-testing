@@ -6,7 +6,7 @@
   "scripts": {
     "start-server": "cd server && nodemon server",
     "start-app": "cd app && react-scripts start",
-    "test": "mocha '**/*.spec.js'"
+    "test": "mocha 'tests/*.spec.js'"
   },
   "repository": {
     "type": "git",
