@@ -33,7 +33,7 @@ export default class Users extends Component {
                         <tbody>
                             {this.state.usersCollection.map((data, i) => {
                                 return (
-                                <tr>
+                                <tr key={i}>
                                     <td>
                                         {data._id}
                                     </td>
