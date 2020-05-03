@@ -4,6 +4,8 @@
   "description": "API testing with supertest & nock",
   "main": "index.js",
   "scripts": {
+    "start-server": "cd server && nodemon server",
+    "start-app": "cd app && react-scripts start",
     "test": "mocha '**/*.spec.js'"
   },
   "repository": {
@@ -18,10 +20,12 @@
   "homepage": "https://github.com/lewisPrescott707/tau-api-testing#readme",
   "dependencies": {
     "chai": "^4.2.0",
-    "express": "^4.17.1",
     "mocha": "^7.1.1",
     "nock": "^12.0.3",
     "supertest": "^4.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "react-scripts": "^3.4.1"
+  }
 }
