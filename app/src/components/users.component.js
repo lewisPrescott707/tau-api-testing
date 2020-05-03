@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import DataTable from './data-table';
 
 export default class Users extends Component {
 
@@ -19,12 +18,6 @@ export default class Users extends Component {
             })
     }
 
-    dataTable() {
-        return this.state.usersCollection.map((data, i) => {
-            return <DataTable obj={data} key={i} />;
-        });
-    }
-
     render() {
         return (
             <div className="wrapper-users">
@@ -38,7 +31,20 @@ export default class Users extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                            {this.dataTable()}
+                            {this.state.usersCollection.map((data, i) => {
+                                return (
+                                <tr>
+                                    <td>
+                                        {data._id}
+                                    </td>
+                                    <td>
+                                        {data.name}
+                                    </td>
+                                    <td>
+                                        {data.email}
+                                    </td>
+                                </tr>
+                            )})}
                         </tbody>
                     </table>
                 </div>
