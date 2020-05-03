@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header>
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-          <Link className="navbar-brand">React Axios Tutorial</Link>
+          <Link className="navbar-brand" to={"/"}>React Axios Tutorial</Link>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
